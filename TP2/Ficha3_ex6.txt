@@ -1,0 +1,6 @@
+Ficha 3
+Exercicio 6
+
+a- //ARQELEM[CONCEL=" Amares "]/IDENTI
+b- //ARQELEM/TIPO[@ASSUNTO="arqueossitio"]/../CONCEL
+c- //ARQELEM[CONCEL=" Montalegre "]/TIPO[@ASSUNTO="arqueossitio"]/../DESCRI

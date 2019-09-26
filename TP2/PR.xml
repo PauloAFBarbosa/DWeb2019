@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PR SYSTEM "file:/home/paulo/Documentos/DAW/DWeb2019/TP2/PR.dtd">
+<PR>
+    <cabeçalho>
+        <key_name></key_name>
+        <title></title>
+        <subtitle></subtitle>
+        <b_date></b_date>
+        <e_date></e_date>
+        <supervisor>
+            <link url="">
+                <texto></texto>
+            </link>
+        </supervisor>
+    </cabeçalho>
+    <grupo>
+        <elemento>
+            <nome></nome>
+            <mail></mail>
+            <git></git>
+        </elemento>
+    </grupo>
+    <abs>
+        <paragrafos></paragrafos>
+    </abs>
+    <ficheiros>
+        <link url="">
+            <texto></texto>
+        </link>
+    </ficheiros>
+    <data></data>
+</PR>

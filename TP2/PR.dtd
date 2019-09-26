@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT PR (cabeçalho,grupo,abs,ficheiros,data)>
+
+<!ELEMENT cabeçalho (key_name,title,subtitle?,b_date,e_date,supervisor) >
+<!ELEMENT key_name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT b_date (#PCDATA)>
+<!ELEMENT e_date (#PCDATA)>
+
+<!ELEMENT supervisor (link)>
+
+<!ELEMENT grupo (elemento+)>
+
+<!ELEMENT elemento (nome,mail,git?) >
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT git (#PCDATA)>
+<!ATTLIST elemento id ID #IMPLIED >
+<!ATTLIST elemento id_ref IDREF #IMPLIED >
+
+<!ELEMENT abs (paragrafos+) >
+<!ELEMENT paragrafos (#PCDATA|italico|bold|link)* >
+<!ELEMENT italico (#PCDATA)>
+<!ELEMENT bold (#PCDATA)>
+
+<!ELEMENT link (texto) >
+<!ELEMENT texto (#PCDATA)>
+<!ATTLIST link url CDATA #REQUIRED>
+
+<!ELEMENT ficheiros (link)*>
+
+<!ELEMENT data (#PCDATA) >
