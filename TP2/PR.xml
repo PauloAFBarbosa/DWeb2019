@@ -2,30 +2,43 @@
 <!DOCTYPE PR SYSTEM "file:/home/paulo/Documentos/DAW/DWeb2019/TP2/PR.dtd">
 <PR>
     <cabeçalho>
-        <key_name></key_name>
-        <title></title>
-        <subtitle></subtitle>
-        <b_date></b_date>
-        <e_date></e_date>
+        <key_name>...</key_name>
+        <title>Trabalho de casa 2</title>
+        <subtitle>DtD's e Queries</subtitle>
+        <b_date>26 de Setembro de 2019</b_date>
+        <e_date>28 de Setembro de 2019</e_date>
         <supervisor>
-            <link url="">
-                <texto></texto>
+            <link url="http://www4.di.uminho.pt/~jcr/">
+                <texto>José Carlos Ramalho</texto>
             </link>
         </supervisor>
     </cabeçalho>
     <grupo>
-        <elemento>
-            <nome></nome>
-            <mail></mail>
-            <git></git>
+        <elemento id="a82886">
+            <nome>Paulo Alexandre Ferreira Barbosa</nome>
+            <mail>a82886@alunos.uminho.pt</mail>
+            <git>https://github.com/PauloAFBarbosa</git>
         </elemento>
     </grupo>
     <abs>
-        <paragrafos></paragrafos>
+        <paragrafos>O DTD(Dfinição de Tipo de Documento) é um conjunto de regras que servem para definir um tipo de documento. Neste caso um documento XML.</paragrafos>
+        <paragrafos>Neste trabalho foi necessário definir 2 Dtd's, sendo um deles para o ficheiro <bold>PR</bold> e outro para os <bold>arqueossítios</bold>. Por fim foi também feito o exercicio 6 da ficha número 3 que consiste em várias queries a um ficheiro xml.</paragrafos>
     </abs>
     <ficheiros>
-        <link url="">
-            <texto></texto>
+        <link url="arq.dtd">
+            <texto>DTD para os arqueossítios</texto>
+        </link>
+        <link url="arq.xml">
+            <texto>XML dos arqueossítios</texto>
+        </link>
+        <link url="Ficha3_ex6.txt">
+            <texto>Ficha 3 - Exercicio 6</texto>
+        </link>
+        <link url="PR.dtd">
+            <texto>DTD do PR</texto>
+        </link>
+        <link url="arq.dtd">
+            <texto>DTD para os arqueossítios</texto>
         </link>
     </ficheiros>
     <data></data>
