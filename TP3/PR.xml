@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname></keyname>
+        <title>XSL</title>
+        <subtitle>Relatório do tp3</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>2 de Outubro de 2019</bdate>
+        <edate>3 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+               <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O <b>xsl</b> é uma linguagem utilizada para a criação de <i>Style Sheets</i> que permitem descrever como transformar um ficheiro <b>xml</b>.</p>
+        <p>No presente caso foram criadas duas <i>style sheets</i> para transformar ficheiros xml em páginas web navegáveis entre si.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Xml do Project Record</deliverable>
+        <deliverable path="PR.xsl">Xsl do Project Record</deliverable>
+        <deliverable path="PR.html">Html do Project Record</deliverable>
+        <deliverable path="arq.xsl">Xsl dos Arqueossitios</deliverable>
+        <deliverable path="arq.xml">Xml dos Arqueossitios</deliverable>
+        <deliverable path="website/index.html">Index do site dos Arqueossitios</deliverable>
+    </deliverables>
+</pr>
