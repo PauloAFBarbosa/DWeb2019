@@ -2,7 +2,7 @@
 <!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/DAW/PR.dtd">
 <pr>
     <metadata>
-        <keyname></keyname>
+        <keyname>DWeb2019</keyname>
         <title>XSL</title>
         <subtitle>Relatório do tp3</subtitle>
         <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
@@ -19,7 +19,7 @@
     </workteam>
     <abstract>
         <p>O <b>xsl</b> é uma linguagem utilizada para a criação de <i>Style Sheets</i> que permitem descrever como transformar um ficheiro <b>xml</b>.</p>
-        <p>No presente caso foram criadas duas <i>style sheets</i> para transformar ficheiros xml em páginas web navegáveis entre si.</p>
+        <p>No presente caso foram criadas duas <u><b><i>style sheets</i></b></u> para transformar ficheiros xml em páginas web navegáveis entre si.</p>
     </abstract>
     <deliverables>
         <deliverable path="PR.xml">Xml do Project Record</deliverable>

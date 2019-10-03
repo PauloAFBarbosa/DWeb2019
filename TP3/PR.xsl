@@ -17,42 +17,63 @@
         </html>
     </xsl:template>
     
-    <xsl:template match="pr">
+    <xsl:template match="metadata">
         <hr/>
         <table class="w3-table w3-striped">
             
             <tr>
-                <td>Key Name:<xsl:value-of select="metadata/keyname"/></td>
-                <td>Begin Date:<xsl:value-of select="metadata/bdate"/></td>
+                <td>Key Name:<xsl:value-of select="keyname"/></td>
+                <td>Begin Date:<xsl:value-of select="bdate"/></td>
             </tr>
             <tr>
-                <td>Title:<xsl:value-of select="metadata/title"/></td>
-                <td>End Date:<xsl:value-of select="metadata/edate"/></td>
+                <td>Title:<xsl:value-of select="title"/></td>
+                <td>End Date:<xsl:value-of select="edate"/></td>
             </tr>
             <tr>
-                <td>Subtitle:<xsl:value-of select="metadata/subtitle"/></td>
-                <td>Supervisor:<a href="{metadata/supervisor/@homepage}"><xsl:value-of select="metadata/supervisor"/></a></td>
+                <td>Subtitle:<xsl:value-of select="subtitle"/></td>
+                <td>Supervisor:<a href="{supervisor/@homepage}"><xsl:value-of select="supervisor"/></a></td>
             </tr>
         </table>
         <hr/>
-        
+    </xsl:template>
+    
+    <xsl:template match="workteam">
         <h3>WorkTeam:</h3>
         <ul class="w3-ul w3-hoverable">
-            <xsl:for-each select="workteam/worker">
+            <xsl:for-each select="worker">
                 <li>Id-<xsl:value-of select="identifier"/> | Name- <xsl:value-of select="name"/> | Email- <a href="mailto:{email}"><xsl:value-of select="email"/></a> | Git- <a href="{git}"><xsl:value-of select="git"/></a> </li>    
             </xsl:for-each>
         </ul>
         <hr/>
-        
+    </xsl:template>
+    
+    <xsl:template match="abstract">
         <h3>Abstract:</h3>
-        <xsl:for-each select="abstract/p">
-            <xsl:value-of select="."/><p/>
+        <xsl:for-each select="p">
+            <xsl:apply-templates/> <p/>
         </xsl:for-each>
         <hr/>
-        
+    </xsl:template>
+    
+    <xsl:template match="b">
+        <b><xsl:apply-templates/></b>
+    </xsl:template>
+    
+    <xsl:template match="u">
+        <u><xsl:apply-templates/></u>
+    </xsl:template>
+    
+    <xsl:template match="i">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>
+     
+    <xsl:template match="xref">
+        <a href="{@url}"><xsl:value-of select="."/></a>
+    </xsl:template>
+    <xsl:template match="deliverables">
         <h3>Deliverables:</h3>
         <ul>
-        <xsl:for-each select="deliverables/deliverable">
+        <xsl:for-each select="deliverable">
             <li><a href="{@path}"><xsl:value-of select="."/></a></li>
         </xsl:for-each>
         </ul>
