@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb2019</keyname>
+        <title>Web server</title>
+        <subtitle>Relatório do tp4</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>9 de Outubro de 2019</bdate>
+        <edate>10 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+               <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Neste trabalho foi necessário dividir o xml dos Arqueossítio em xml's individuais e depois criar uma stylesheet para transformar os mesmos em html.</p>
+        <p>Por fim foi necessário criar um servidor em nodejs capaz de devolver o xml do Arqueossítio selecionado e a respetiva stylesheet para o transformar.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.xml">Xml do PR.</deliverable>
+        <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
+        <deliverable path="pr.html">Html do ficheiro PR.</deliverable>
+        <deliverable path="arq.xml">Xml dos Arqueossítios.</deliverable>
+        <deliverable path="arq2html.xsl">Stylesheet responsável por transformar cada Arqueossítio em html.</deliverable>
+        <deliverable path="server.js">Servidor em Nodejs.</deliverable>
+        <deliverable path="xml-split.xsl">Stylesheet responsável por transformar o ficheiro xml dos Arqueossítios em vários ficheiros individuais.</deliverable>
+        <deliverable path="dataset/">Pasta com os Arqueossítios individuais.</deliverable>
+    </deliverables>
+</pr>
