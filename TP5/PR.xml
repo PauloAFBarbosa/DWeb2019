@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/DWeb2019/TP5/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb2019</keyname>
+        <title>Web server - Gestão de tarefas</title>
+        <subtitle>Relatório do tp5</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>15 de Outubro de 2019</bdate>
+        <edate>17 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho criou-se um servidor capaz de registar tarefas e listar as mesmas. Tudo isto foi feito numa única página web utilizando pacotes para fazer o redirect.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Xml do PR.</deliverable>
+        <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
+        <deliverable path="pr.html">Html do ficheiro PR.</deliverable>
+        <deliverable path="tarefa.json">Ficheiro responsável por guardar as tarefas.</deliverable>
+        <deliverable path="server.js">Servidor em Nodejs.</deliverable>
+        <deliverable path="erro.pug">Template em pug para os erros.</deliverable>
+        <deliverable path="index.pug">Template em pug para a pagina principal.</deliverable>
+        <deliverable path="layout.pug">Template em pug do layout do site.</deliverable>
+        <deliverable path="stylesheets/w3.css">Ficheiro css usado no site.</deliverable>
+    </deliverables>
+</pr>
