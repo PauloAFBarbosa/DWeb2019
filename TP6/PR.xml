@@ -19,18 +19,25 @@
     </workteam>
     <abstract>
         <p>
-            Neste trabalho fez-se um website utilizando a framework js express. Neste website é possivel adicionar/remover e editar registos de musica. Para editar os mesmos é necessário clicar para ver e só depois editar os dados.
+            Neste trabalho fez-se um website utilizando a framework js express.
+        </p>
+        <p>
+            Neste website é possivel adicionar/remover e editar registos de música. Para editar os mesmos é necessário clicar para ver e só depois editar os dados.
         </p>
     </abstract>
     <deliverables>
         <deliverable path="PR.xml">Xml do PR.</deliverable>
         <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
-        <deliverable path="pr.html">Html do ficheiro PR.</deliverable>
-        <deliverable path="tarefa.json">Ficheiro responsável por guardar as tarefas.</deliverable>
-        <deliverable path="server.js">Servidor em Nodejs.</deliverable>
-        <deliverable path="erro.pug">Template em pug para os erros.</deliverable>
-        <deliverable path="index.pug">Template em pug para a pagina principal.</deliverable>
+        <deliverable path="PR.html">Html do ficheiro PR.</deliverable>
+        <deliverable path="arq-son-EVO.json">Ficheiro responsável por guardar as músicas.</deliverable>
+        <deliverable path="views/error.pug">Template em pug para os erros.</deliverable>
+        <deliverable path="views/index.pug">Template em pug para a página principal.</deliverable>
         <deliverable path="layout.pug">Template em pug do layout do site.</deliverable>
-        <deliverable path="stylesheets/w3.css">Ficheiro css usado no site.</deliverable>
+        <deliverable path="routes/index.js">Ficheiro de rotas do index (index.js).</deliverable>
+        <deliverable path="public/stylesheets/style.css">Ficheiro css usado no site.</deliverable>
+        <deliverable path="public/javascripts/apagar.js">Ficheiro com a função javascript responsável por fazer o pedido de delete ao servidor.</deliverable>
+        <deliverable path="public/javascripts/edit.js">Ficheiro com a função javascript responsável por fazer o pedido de put ao servidor.</deliverable>
+        <deliverable path="public/javascripts/apagar.js">Ficheiro com a função javascript responsável por fazer o pedido de get ao servidor. É utilizado para mostrar um registo e editar o mesmo.</deliverable>
+        <deliverable path="bin/www">Ficheiro www do website.</deliverable>
     </deliverables>
 </pr>
