@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb2019</keyname>
+        <title>Web server - Gestão de filmes</title>
+        <subtitle>Relatório do tp7</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>29 de Outubro de 2019</bdate>
+        <edate>2 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho fez-se um website utilizando a framework js express, onde o website guarda toda a sua informação numa base de dados utilizando o mongodb.
+        </p>
+        <p>
+            Neste website é possivel adicionar/remover e editar registos de filmes. Para editar os mesmos é necessário clicar para ver/editar e é possível também adicionar novos generos ao filme e novos elementos ao cast.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Xml do PR.</deliverable>
+        <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
+        <deliverable path="Qjson.txt">Queries enviadas para trabalho de casa.</deliverable>   
+        <deliverable path="PR.html">Html do ficheiro PR.</deliverable>
+        
+        <deliverable path="filmes/app.js">Ficheiro responsavel pelo log, pelas várias rotas etc.</deliverable>
+        <deliverable path="filmes/controllers/filmes.js">Ficheiro do controller filmes.</deliverable>
+        <deliverable path="filmes/models/filme.js">Ficheiro do model filmes.</deliverable>
+        <deliverable path="filmes/public/javascripts/apagar.js">Script responsavel por apagar registos.</deliverable>
+        <deliverable path="filmes/public/javascripts/edit.js">Script responsavel por editar registos.</deliverable>
+        <deliverable path="filmes/public/javascripts/j.js">Script responsavel por adicionar textboxes ao form para adicionar mais casts.</deliverable>
+        <deliverable path="filmes/public/javascripts/j2.js">Script responsavel por adicionar textboxes ao form para adicionar mais generos.</deliverable>
+        <deliverable path="filmes/public/javascripts/show.js">Script responsavel por ir buscar a informação de um registos e mostrar o mesmo.</deliverable>
+        <deliverable path="filmes/public/stylesheets/style.css">Folha de estilos utilizada no website.</deliverable>
+        <deliverable path="filmes/routes/filmes.js">Ficheiro de rotas de filmes.</deliverable>
+        <deliverable path="filmes/routes/index.js">Ficheiro de rotas "/", esta rota é que vai mandar pedidos get ou delete para a rota de filmes.</deliverable>
+        <deliverable path="filmes/views/error.pug">Template em pug para os erros.</deliverable>
+        <deliverable path="filmes/views/index.pug">Template em pug para a página principal.</deliverable>
+        <deliverable path="filmes/views/layout.pug">Template em pug do layout do site.</deliverable>
+        <deliverable path="filmes/views/edit.pug">Template em pug da pagina para edição de registos.</deliverable>
+        <deliverable path="filmes/bin/www">Ficheiro www do website.</deliverable>
+    </deliverables>
+</pr>

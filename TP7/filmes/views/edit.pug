@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1 Filmes
+  .w3-container
+        .w3-card-4
+            header.w3-container
+            .w3-container
+                form.w3-container(action='/edit' method='POST' id='form1')
+                    label
+                        b ID
+                    input.w3-input.w3-border(type='text' name='id' id='id' value=filme._id disabled)
+                    label
+                        b Titulo
+                    input.w3-input.w3-border(type='text' name='title' id='title' value=filme.title)
+                    label
+                        b Ano
+                    input.w3-input.w3-border(type='text' name='year' id='year' value=filme.year)
+                    label(id="addCast")
+                        b Cast
+                    each c in filme.cast
+                        input.w3-input.w3-border(type='text' name='cast' id='cast' value=c)
+                    button(type="button" id="add") Add Cast
+                    script(src="./j.js")
+                    hr
+                    label(id="addGen")
+                        b Genero
+                    each g in filme.genres
+                        input.w3-input.w3-border(type='text' name='genres' id='genres' value=g)
+                    button(type="button" id="addG") Add Genero
+                    script(src="./j2.js")
+                    hr
+                    input.w3-btn.w3-blue-grey(name="editar" type='submit' value='Editar')
+
+
