@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb2019</keyname>
+        <title>Api de dados</title>
+        <subtitle>Relatório do tp8</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>5 de Novembro de 2019</bdate>
+        <edate>11 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho foi necessário criar uma Api de dados para a base de dados dos prémios nobeis.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="prize.json">Base de dados com os vencedores dos pémios nobeis.</deliverable>
+        <deliverable path="PR.xml">Xml do PR.</deliverable>
+        <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
+        <deliverable path="PR.html">Html do ficheiro PR.</deliverable>
+        
+        <deliverable path="prizes/app.js">Ficheiro responsavel pelo log, pelas várias rotas etc.</deliverable>
+        <deliverable path="prizes/controllers/prizes.js">Ficheiro do controller prizes.</deliverable>
+        <deliverable path="prizes/models/prizes.js">Ficheiro do model prizes.</deliverable>
+        <deliverable path="prizes/routes/api.js">Ficheiro de rotas da api de dados.</deliverable>
+        <deliverable path="prizes/bin/www">Ficheiro www do website.</deliverable>
+    </deliverables>
+</pr>
