@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb2019</keyname>
+        <title>Upload de multiplos ficheiros</title>
+        <subtitle>Relatório do tp10</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>19 de Novembro de 2019</bdate>
+        <edate>19 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho era necessário acabar o projeto feito na aula, fazendo o upload de vários ficheiros.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Xml do PR.</deliverable>
+        <deliverable path="PR.xsl">Stylesheet responsável por transformar o PR em html.</deliverable>
+        <deliverable path="PR.html">Html do ficheiro PR.</deliverable>
+        
+        <deliverable path="gficheiros/routes/api.js">Unico ficheiro modificado, responsável pelo upload de multiplos ficheiros.</deliverable>
+        
+    </deliverables>
+</pr>
