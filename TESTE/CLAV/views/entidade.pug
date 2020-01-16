@@ -41,8 +41,10 @@ block content
                 th Titulo
             each d in dona
                 tr
-                    td= d.codigo
-                    td= d.titulo
+                    td
+                        a(href="http://clav.dglab.gov.pt/classes/consultar/c"+d.codigo)=d.codigo
+                    td
+                        a(href="http://clav.dglab.gov.pt/classes/consultar/c"+d.codigo)=d.titulo
     .w3-container
     h2 Processos que é Participante
     table.w3-table-all
@@ -52,9 +54,12 @@ block content
                 th Titulo
             each p in participante
                 tr
-                    td= p.tipoPar
-                    td= p.codigo
-                    td= p.titulo
+                    td
+                        a(href="http://clav.dglab.gov.pt/classes/consultar/c"+p.codigo)=p.tipoPar
+                    td
+                        a(href="http://clav.dglab.gov.pt/classes/consultar/c"+p.codigo)=p.codigo
+                    td
+                        a(href="http://clav.dglab.gov.pt/classes/consultar/c"+p.codigo)=p.titulo
     .w3-container
         p 
             a(href="http://localhost:3000/") Voltar ao inicio
