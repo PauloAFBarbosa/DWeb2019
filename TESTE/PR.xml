@@ -43,10 +43,7 @@
             <b>Como correr:</b>
         </p>
         <p>
-            Converter o xml para json usando o site fornecido e escolhendo o prefixo para atributos '_'.
-        </p>
-        <p>
-            Correr o mongoimport -d daw_teste_arq_musicas -c daw_teste_arq_musicas --jsonArray arquivo-musica-digital.json
+            Correr o mongoimport -d daw_teste_arq_musicas -c daw_teste_arq_musicas --jsonArray arquivo-musica-digital.json (ficheiro na pasta TESTE)
         </p>
         <p>
             Correr npm i. Se acontecer algum erro correr tambem npm i mongoose.
