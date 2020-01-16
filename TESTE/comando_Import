@@ -1,0 +1,1 @@
+comando para import -> mongoimport -d daw_teste_arq_musicas -c daw_teste_arq_musicas --jsonArray Documentos/4Ano/DAW/DWeb2019/Teste_Daw_2020/arquivo-musica-digital.json

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/paulo/Documentos/4Ano/DAW/PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWeb</keyname>
+        <title>Teste</title>
+        <subtitle>2019/2020</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>16 de Janeiro de 2020</bdate>
+        <edate>16 de Janeiro de 2020</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82886</identifier>
+            <name>Paulo Barbosa</name>
+            <email>a82886@hotmail.com</email>
+            <git>https://github.com/PauloAFBarbosa</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O teste é composto por duas questões. De seguida vou explicar como realizei cada uma delas.
+        </p>
+        <p>
+            <b>Exercício 1:</b>
+        </p>
+        <p>
+            Antes de explicar o que foi feito neste exercício é necessário explicar como foi feita persistência dos dados.
+        </p>
+        <p>
+            A persistência dos dados foi feita através do Mongo. Para isso foi necessário converter o ficheiro em xml em json, para tal utilizei uma ferramenta online (https://www.freeformatter.com/xml-to-json-converter.html e o prefixo para os atributos foi '_'). De seguida apenas se executou o seguinte comando "mongoimport -d daw_teste_arq_musicas -c daw_teste_arq_musicas --jsonArray arquivo-musica-digital.json". Com isto criou-se uma base de dados e uma coleção no mongo com toda a informação do dataset.
+        </p>
+        <p>
+            No que toca à Api de dados a mesma foi craida com a ajuda do comando "npx express-generator --view=pug api" de seguida instalou-se o mongoose para fazer a ligação à base de dados e instalaram-se também todas as dependências necessárias (isto foi feito com npm i mongoose --save e npm i). Para por o servidor da api de dados a correr basta executar npm runstart e aceder ao endereco http://localhost:3000+endereço da API de dados.
+        </p>
+        <p>
+            É de notar que o servidor do mongo tem de estar a correr para se importarem os dados e consultar a api de dados.
+        </p>
+        <p>
+            Primeiramente no servidor foi feita a ligação à base de dados e depois foram redirecionados todos os pedidos com /api para a rota index. Foi também necessário definir um model e um controller para a consulta à base de dados.
+        </p>
+        <p>
+            <b>Como correr:</b>
+        </p>
+        <p>
+            Converter o xml para json usando o site fornecido e escolhendo o prefixo para atributos '_'.
+        </p>
+        <p>
+            Correr o mongoimport -d daw_teste_arq_musicas -c daw_teste_arq_musicas --jsonArray arquivo-musica-digital.json
+        </p>
+        <p>
+            Correr npm i. Se acontecer algum erro correr tambem npm i mongoose.
+        </p>
+        <p>
+            Correr npm run start. A api de dados esta pronta a ser consultada em http://localhost:3000
+        </p>
+        <p>
+            <b>Exercício 2:</b>
+        </p>
+        <p>
+            <b>Respostas à consulta da api de dados:</b>
+        </p>
+        <p>1- Estão catalogadas 546 entidades</p>
+        <p>2- A Administração Pública (tip_AP) e Autoridades de supervisão e fiscalização (tip_ASF)</p>
+        <p>3- A ent_ANSR é iniciadora no processo com o codigo 400.10.056 de titulo Registo nacional de condutores.</p>
+        <p>4- O processo do qual a ent_CMil é dona é o processo com codigo 750.20.601.</p>
+            
+        <p>
+            Respostas da pergunta 1
+        </p>
+        <p>
+            Para a criação do servidor com a interface gráfica dos dados foi utilizado o mesmo metodo do exercicio anterior (npx express-generator --view=pug CLAV). Para este servidor é necessário instalar o axios e as dependencias com npm i axios --save e npm i. Depois disso esta pronto para por o servidor a correr com npm run start.
+        </p>
+        <p>
+            Para consultar o servidor basta aceder ao endereço http://localhost:3000.
+        </p>
+        <p>
+            Para exibir os dados da API são feitos pedidos GET usando o axios e quando se obtem a resposta esses mesmos dados são passados ao PUG onde vão ser exibidos.
+        </p>
+        <p>
+            <b>Como correr:</b>
+        </p>
+        <p>
+            Correr npm i. Se acontecer algum erro correr tambem npm i axios.
+        </p>
+        <p>
+            Correr npm run start. O servidor esta pronto a ser consultado em http://localhost:3000
+        </p>
+        
+    </abstract>
+    
+</pr>
